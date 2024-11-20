@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Comparison</title>
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Document Comparison</h1>
+        <div class="dropzone-container">
+            <div id="dropzone1" class="dropzone">
+                <p>Drop PDF 1 here or click to select</p>
+                <input type="file" id="pdf1" accept=".pdf" hidden>
+            </div>
+            <div id="dropzone2" class="dropzone">
+                <p>Drop PDF 2 here or click to select</p>
+                <input type="file" id="pdf2" accept=".pdf" hidden>
+            </div>
+        </div>
+        <button id="compareButton">Compare PDFs</button>
+        <div id="result" class="result-section">
+            <h2>Comparison Result</h2>
+            <div id="comparisonOutput"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="doc.js"></script>
+</body>
+</html>
